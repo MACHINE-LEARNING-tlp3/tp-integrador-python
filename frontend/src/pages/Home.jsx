@@ -165,7 +165,8 @@ function Home() {
         </section>
 
         {/* Sección de Modelo Predictivo */}
-        <section className="px-6 py-12 bg-white">
+        <section  id="Prediccion"
+        className="px-6 py-12 bg-white">
           <div className="max-w-6xl mx-auto">
             <div className="text-center mb-12">
               <h2 className="text-3xl md:text-4xl font-bold text-[#66021f] mb-4">
@@ -242,7 +243,7 @@ function Home() {
                 </div>
               </div>
 
-              <div className="w-full lg:w-1/2">
+              <div  className="w-full lg:w-1/2">
                 <div className="bg-[#66021f] text-white p-8 rounded-xl shadow-lg">
                   <h3 className="text-2xl font-bold mb-6 text-center">Calculadora de Riesgo</h3>
                   <form onSubmit={handleForm} className="space-y-6">
