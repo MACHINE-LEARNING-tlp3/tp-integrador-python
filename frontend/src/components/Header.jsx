@@ -77,9 +77,9 @@ function Header() {
           aria-label={isMenuOpen ? "Cerrar menú" : "Abrir menú"}
         >
           {isMenuOpen ? (
-            <X className="h-6 w-6 text-gray-800 hover:text-black" />
+            <X className="h-6 w-6 text-white hover:text-[#E8C0C9]" />
           ) : (
-            <Menu className="h-6 w-6 text-gray-800 hover:text-black" />
+            <Menu className="h-6 w-6 text-white hover:text-[#E8C0C9]" />
           )}
         </button>
       </div>
