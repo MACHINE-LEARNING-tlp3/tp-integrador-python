@@ -203,10 +203,7 @@ function Home() {
                           <div className="w-2 h-2 rounded-full bg-[#66021f] mt-2 flex-shrink-0"></div>
                           <span>Proporciona resultados en segundos</span>
                         </li>
-                        <li className="flex items-start gap-2">
-                          <div className="w-2 h-2 rounded-full bg-[#66021f] mt-2 flex-shrink-0"></div>
-                          <span>Actualización continua con nuevos datos</span>
-                        </li>
+                        
                       </ul>
                     </div>
                   </div>
