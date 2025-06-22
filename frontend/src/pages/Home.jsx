@@ -285,9 +285,6 @@ function Home() {
                       )}
                     </button>
                   </form>
-                  <p className="text-sm text-white/80 mt-4 text-center">
-                    Todos los datos se procesan de forma segura y confidencial.
-                  </p>
                 </div>
 
                 <div className="mt-8 bg-[#F8F1F3] p-6 rounded-xl border border-[#E0C0C9]">
