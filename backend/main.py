@@ -4,7 +4,7 @@ from routes.routes import router
 
 app = FastAPI()
 
-# permitir las peticiones de otros dominios
+# permite las peticiones de otros dominios
 app.add_middleware(
   CORSMiddleware,
   allow_origins=["*"],
