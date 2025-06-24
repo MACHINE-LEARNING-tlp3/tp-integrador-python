@@ -80,33 +80,37 @@ function Home() {
       Swal.close();
 
       let colorClase = "";
-      let icono = "";
-     
+      let colorDiag = "";
+      
       if (res.probabilidad >= 50) {
         colorClase = "text-red-500";
-        icono = "error";
+        colorDiag = "text-red-500";
+       
        
       } else if (res.probabilidad >= 20) {
         colorClase = "text-yellow-500";
-        icono = "warning";
+        colorDiag = "text-yellow-500";
+       
        
       } else {
         colorClase = "text-green-500";
-        icono = "success";
+        colorDiag = "text-green-500";
        
       }
 
-      Swal.fire({
-        icon: icono,
-        title: `Diagnóstico: ${res.diagnostico}`,
-        html: `
-    <div class="text-base">
-      <strong class="${colorClase}">Probabilidad:</strong> ${res.probabilidad}%<br/>
-      
+     Swal.fire({
+  title: "Diagnóstico",
+  html: `
+    <div class="text-lg">
+      <strong class="${colorDiag}">${res.diagnostico}</strong>
+      <br/>
+      <span class="${colorClase} font-semibold">${res.probabilidad}%</span>
     </div>
   `,
-        confirmButtonColor: "#66021f",
-      });
+  confirmButtonColor: "#66021f",
+  confirmButtonText: "Cerrar",
+});
+
     } catch (error) {
       console.log(error);
       Swal.close();
@@ -373,6 +377,7 @@ function Home() {
                   <p className="text-gray-700 mb-4">
                     Nuestro modelo considera 10 parámetros clínicos clave
                     obtenidos de biopsias y estudios por imágenes:
+                    Los datos analizados provienen del estudio computarizado de mamografías, donde se extraen características de la forma del tumor como radio, perímetro y concavidad.
                   </p>
                   <ul className="grid grid-cols-1 md:grid-cols-2 gap-2 text-sm text-gray-700">
                     <li className="flex items-center gap-2">
